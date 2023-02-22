@@ -1,6 +1,6 @@
 {
   "name": "@jihyunlab/prettier-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "JihyunLab Prettier config.",
   "license": "MIT",
   "author": "JihyunLab <jihyunlab@gmail.com> (https://github.com/jihyunlab)",
@@ -17,7 +17,6 @@
   "keywords": [
     "jihyunlab",
     "prettier",
-    "prettier-config",
-    "typescript"
+    "prettier-config"
   ]
 }
