@@ -1,0 +1,29 @@
+{
+  "name": "@jihyunlab/prettier-config",
+  "version": "1.0.0",
+  "description": "JihyunLab Prettier config.",
+  "license": "MIT",
+  "author": "JihyunLab <jihyunlab@gmail.com>",
+  "contributors": [
+    "Philjung Yun <philjung.yun@gmail.com>",
+    "Donghyun Kim <naokinaoki1225@gmail.com>"
+  ],
+  "homepage": "https://github.com/jihyunlab/prettier-config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jihyunlab/prettier-config"
+  },
+  "main": ".prettierrc.json",
+  "scripts": {},
+  "peerDependencies": {
+    "prettier": "^2.8.4",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1"
+  },
+  "keywords": [
+    "jihyunlab",
+    "prettier",
+    "prettier-config",
+    "typescript"
+  ]
+}
