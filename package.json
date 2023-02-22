@@ -1,22 +1,12 @@
 {
   "name": "@jihyunlab/prettier-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JihyunLab Prettier config.",
   "license": "MIT",
   "author": "JihyunLab <jihyunlab@gmail.com> (https://github.com/jihyunlab)",
   "homepage": "https://github.com/jihyunlab/prettier-config",
-  "contributors": [
-    "Philjung Yun <philjung.yun@gmail.com> (https://github.com/jihyunlab)",
-    "Donghyun Kim <naokinaoki1225@gmail.com> (https://github.com/jihyunlab)"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jihyunlab/prettier-config.git"
-  },
-  "bugs": {
-    "url": "http://github.com/jihyunlab/prettier-config/issues",
-    "email": "jihyunlab@gmail.com"
-  },
+  "repository": "https://github.com/jihyunlab/prettier-config",
+  "bugs": "http://github.com/jihyunlab/prettier-config/issues",
   "main": ".prettierrc.json",
   "scripts": {},
   "peerDependencies": {
