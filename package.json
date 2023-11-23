@@ -1,10 +1,10 @@
 {
   "name": "@jihyunlab/prettier-config",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "JihyunLab Prettier config.",
   "license": "MIT",
-  "author": "JihyunLab <jihyunlab@gmail.com> (https://github.com/jihyunlab)",
-  "homepage": "https://github.com/jihyunlab/prettier-config",
+  "author": "JihyunLab <info@jihyunlab.com> (https://jihyunlab.com)",
+  "homepage": "https://jihyunlab.com/library/npm/prettier-config",
   "repository": "https://github.com/jihyunlab/prettier-config",
   "bugs": "http://github.com/jihyunlab/prettier-config/issues",
   "main": ".prettierrc.json",

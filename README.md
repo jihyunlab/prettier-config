@@ -9,7 +9,7 @@ JihyunLab Prettier config.
 ### 1) Setup regular JihyunLab Prettier config
 
 ```bash
-npm install --save-dev @jihyunlab/prettier-config
+npm i --save-dev @jihyunlab/prettier-config
 ```
 
 or
@@ -185,12 +185,12 @@ Within your .vscode/settings.json file:
 ### 1) When a peer dependencies package is not installed
 
 ```bash
-npm install --save-dev prettier@^2.8.4 eslint-config-prettier@^8.6.0 eslint-plugin-prettier@^4.2.1
+npm i --save-dev prettier@^2.8.4 eslint-config-prettier@^8.6.0 eslint-plugin-prettier@^4.2.1
 ```
 
 ## Credits
 
-Authored and maintained by JihyunLab <<jihyunlab@gmail.com>>
+Authored and maintained by JihyunLab <<info@jihyunlab.com>>
 
 ## License
 
