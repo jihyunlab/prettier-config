@@ -6,7 +6,7 @@
   "author": "JihyunLab <info@jihyunlab.com> (https://jihyunlab.com)",
   "homepage": "https://jihyunlab.com/library/npm/prettier-config",
   "repository": "https://github.com/jihyunlab/prettier-config",
-  "bugs": "http://github.com/jihyunlab/prettier-config/issues",
+  "bugs": "https://github.com/jihyunlab/prettier-config/issues",
   "main": ".prettierrc.json",
   "scripts": {},
   "peerDependencies": {
