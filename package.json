@@ -1,6 +1,6 @@
 {
   "name": "@jihyunlab/prettier-config",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "JihyunLab Prettier config.",
   "license": "MIT",
   "author": "JihyunLab <info@jihyunlab.com> (https://jihyunlab.com)",
@@ -15,7 +15,6 @@
     "eslint-plugin-prettier": ">=4.0.0"
   },
   "keywords": [
-    "jihyunlab",
     "prettier",
     "prettier-config"
   ]
