@@ -5,180 +5,112 @@
 
 JihyunLab Prettier config.
 
-## Setup
-
-### 1) Setup regular JihyunLab Prettier config
+## Installation
 
 ```bash
-npm i --save-dev @jihyunlab/prettier-config
+npm i --save-dev @jihyunlab/prettier-config prettier eslint-config-prettier eslint-plugin-prettier
 ```
 
-or
+## Configuration
 
-```bash
-yarn add --dev @jihyunlab/prettier-config prettier@^2.8.4 eslint-config-prettier@^8.6.0 eslint-plugin-prettier@^4.2.1
+### Configure Prettier
+
+Create the <U>prettier.config.mjs</U> file.
+
+```
+├─ prettier.config.mjs
+└─ ...
 ```
 
-### 2) Configure Prettier
+Edit the <U>prettier.config.mjs</U> file as follows:
 
-.prettierrc.js file structure
-
-    .
-    ├── .prettierrc.js
-    └── ...
-
-Within your .prettierrc.js file:
-
-```diff
-+ module.exports = {
-+   ...require('@jihyunlab/prettier-config')
-+ };
 ```
+import { jihyunlabPrettierConfig } from '@jihyunlab/prettier-config';
 
-Example .prettierrc.js file:
-
-```diff
-module.exports = {
-  ...require('@jihyunlab/prettier-config'),
-  printWidth: 120, // your additional prettier configs
+export default {
+  ...jihyunlabPrettierConfig,
 };
 ```
 
-Restart the editor after changing the prettier config.
+### Configure Prettier Ignore
 
-### 3) Conflict handling with ESLint and setting Prettier error display in ESLint
+Create the <U>.prettierignore</U> file.
 
-Delete Prettier related configs in ESLint.
-
-Within your .eslintrc.json file:
-
-```diff
-"extends": [
-  "@jihyunlab/eslint-config",
-+ "prettier"
-]
+```
+├─ .prettierignore
+└─ ...
 ```
 
-Setting Prettier error display in ESLint.
+Edit the <U>.prettierignore</U> file as follows:
 
-Within your .eslintrc.json file:
-
-```diff
-"plugins": [
-+ "prettier"
-],
-"rules": {
-+ "prettier/prettier": "error"
-}
 ```
-
-Example .eslintrc.json file:
-
-```diff
-{
-  "extends": [
-    "@jihyunlab/eslint-config", // your eslint extends
-    "prettier"
-  ],
-  "plugins": [
-    "prettier"
-  ],
-  "parserOptions": {
-    "project": "./tsconfig.json"
-  },
-  "rules": {
-    "prettier/prettier": "error"
-  }
-}
-```
-
-## Additional settings
-
-Additional settings file structure
-
-    .
-    ├── .vscode                   # Visual Studio Code
-    │   ├── extensions.json
-    │   ├── settings.json
-    ├── .editorconfig             # EditorConfig
-    ├── .prettierignore           # Ignore file(Prettier)
-    └── ...
-
-Additional configuration files can be found on the git page.
-
-https://github.com/jihyunlab/prettier-config
-
-### 1) Ignore file
-
-Example .prettierignore file:
-
-```diff
 /node_modules
 /build
 /dist
+/coverage
 ```
 
-### 2) EditorConfig
+### Configure VSCode for Prettier
 
-Example .editorconfig file:
+If you are not using VSCode, do not follow the current steps.
 
-```diff
-root = true
+Create the <U>.vscode/settings.json</U> file.
 
-[*]
-indent_style = space
-indent_size = 2
-end_of_line = lf
-charset = utf-8
-trim_trailing_whitespace = true
-insert_final_newline = true
-
-[*.md]
-trim_trailing_whitespace = false
+```
+├─ .vscode
+│  └─ settings.json
+└─ ...
 ```
 
-### 3) Visual Studio Code
+Edit the <U>.vscode/settings.json</U> file as follows:
 
-Within your .vscode/extensions.json file:
-
-```diff
+```
 {
-  "recommendations": [
-+   "esbenp.prettier-vscode",
-+   "editorconfig.editorconfig"
-  ]
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
 }
 ```
 
-Within your .vscode/settings.json file:
+### Configure ESLint for Prettier
 
-```diff
-{
-+ "editor.defaultFormatter": "esbenp.prettier-vscode",
-+ "editor.formatOnSave": true
-}
+If you are not using ESLint, do not follow the current steps.\
+For ESLint installation and configuration, see [@jihyunlab/eslint-config](https://www.npmjs.com/package/@jihyunlab/eslint-config).
+
+Edit the <U>eslint.config.mjs</U> file as follows:
+
+```
+├─ eslint.config.mjs
+└─ ...
 ```
 
-## JihyunLab Prettier configs
+```
+import eslint from '@eslint/js';
+import tsEslint from 'typescript-eslint';
+import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
+import { jihyunlabEslintConfig } from '@jihyunlab/eslint-config';
 
-```diff
-{                                       # Default
-  "printWidth": 80,                     # 80
-  "tabWidth": 2,                        # 2
-  "useTabs": false,                     # false
-  "semi": true,                         # true
-  "singleQuote": true,                  # false
-  "quoteProps": "as-needed",            # "as-needed"
-  "jsxSingleQuote": false,              # false
-  "trailingComma": "es5",               # "es5"
-  "bracketSpacing": true,               # true
-  "bracketSameLine": false,             # false
-  "arrowParens": "always",              # "always"
-  "proseWrap": "preserve",              # "preserve"
-  "htmlWhitespaceSensitivity": "css",   # "css"
-  "endOfLine": "auto",                  # "lf"
-  "singleAttributePerLine": false       # false
-}
+export default tsEslint.config(
+  {
+    ignores: ['node_modules', 'dist', 'build', 'coverage'],
+  },
+  {
+    languageOptions: {
+      parserOptions: {
+        project: './tsconfig.eslint.json',
+        tsconfigRootDir: import.meta.dirname,
+      },
+    },
+  },
+  {
+    files: ['**/*.ts', '**/*.tsx', '**/*.cts', '**/*.mts'],
+    extends: [
+      eslint.configs.recommended,
+      ...tsEslint.configs.recommendedTypeChecked,
+      jihyunlabEslintConfig,
+      eslintPluginPrettierRecommended,
+    ],
+  }
+);
 ```
 
 ## Credits
