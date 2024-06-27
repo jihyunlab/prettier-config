@@ -1,6 +1,7 @@
 # @jihyunlab/prettier-config
 
-[![Version](https://img.shields.io/npm/v/@jihyunlab/prettier-config.svg?style=flat-square)](https://www.npmjs.com/package/@jihyunlab/prettier-config?activeTab=versions) [![Downloads](https://img.shields.io/npm/dt/@jihyunlab/prettier-config.svg?style=flat-square)](https://www.npmjs.com/package/@jihyunlab/prettier-config) [![Last commit](https://img.shields.io/github/last-commit/jihyunlab/prettier-config.svg?style=flat-square)](https://github.com/jihyunlab/prettier-config/graphs/commit-activity) [![License](https://img.shields.io/github/license/jihyunlab/prettier-config.svg?style=flat-square)](https://github.com/jihyunlab/prettier-config/blob/master/LICENSE)
+[![Version](https://img.shields.io/npm/v/@jihyunlab/prettier-config.svg?style=flat-square)](https://www.npmjs.com/package/@jihyunlab/prettier-config?activeTab=versions) [![Downloads](https://img.shields.io/npm/dt/@jihyunlab/prettier-config.svg?style=flat-square)](https://www.npmjs.com/package/@jihyunlab/prettier-config) [![Last commit](https://img.shields.io/github/last-commit/jihyunlab/prettier-config.svg?style=flat-square)](https://github.com/jihyunlab/prettier-config/graphs/commit-activity) [![License](https://img.shields.io/github/license/jihyunlab/prettier-config.svg?style=flat-square)](https://github.com/jihyunlab/prettier-config/blob/master/LICENSE) [![Linter](https://img.shields.io/badge/linter-eslint-blue?style=flat-square)](https://eslint.org) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)\
+[![Build](https://github.com/jihyunlab/prettier-config/actions/workflows/build.yml/badge.svg)](https://github.com/jihyunlab/prettier-config/actions/workflows/build.yml) [![Lint](https://github.com/jihyunlab/prettier-config/actions/workflows/lint.yml/badge.svg)](https://github.com/jihyunlab/prettier-config/actions/workflows/lint.yml)
 
 JihyunLab Prettier config.
 
@@ -161,8 +162,8 @@ Within your .vscode/settings.json file:
 ## JihyunLab Prettier configs
 
 ```diff
-{                                       # Prettier Default
-  "printWidth": 120,                    # 80
+{                                       # Default
+  "printWidth": 80,                     # 80
   "tabWidth": 2,                        # 2
   "useTabs": false,                     # false
   "semi": true,                         # true
@@ -178,14 +179,6 @@ Within your .vscode/settings.json file:
   "endOfLine": "auto",                  # "lf"
   "singleAttributePerLine": false       # false
 }
-```
-
-## Troubleshooting
-
-### 1) When a peer dependencies package is not installed
-
-```bash
-npm i --save-dev prettier@^2.8.4 eslint-config-prettier@^8.6.0 eslint-plugin-prettier@^4.2.1
 ```
 
 ## Credits

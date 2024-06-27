@@ -1,8 +1,5 @@
 *
-
-!/.prettierrc.json
-
+!/dist/**/*
 !/package.json
-
 !/LICENCE
 !/README.md

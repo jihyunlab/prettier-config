@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "commonjs",
+    "strict": true,
+    "allowJs": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "outDir": "dist"
+    // "sourceMap": true
+  },
+  "include": ["**/*.ts", "**/*.tsx", "**/*.cts", "**/*.mts"],
+  "exclude": ["node_modules", "dist", "build", "coverage"]
+}

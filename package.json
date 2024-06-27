@@ -1,21 +1,32 @@
 {
   "name": "@jihyunlab/prettier-config",
-  "version": "1.1.3",
+  "version": "2.0.0",
   "description": "JihyunLab Prettier config.",
   "license": "MIT",
   "author": "JihyunLab <info@jihyunlab.com> (https://jihyunlab.com)",
   "homepage": "https://jihyunlab.com/library/npm/prettier-config",
   "repository": "https://github.com/jihyunlab/prettier-config",
   "bugs": "https://github.com/jihyunlab/prettier-config/issues",
-  "main": ".prettierrc.json",
-  "scripts": {},
-  "peerDependencies": {
-    "prettier": ">=2.0.0",
-    "eslint-config-prettier": ">=8.0.0",
-    "eslint-plugin-prettier": ">=4.0.0"
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean",
+    "lint": "eslint **/*.{ts,tsx,mts,cts}"
   },
   "keywords": [
     "prettier",
     "prettier-config"
-  ]
+  ],
+  "devDependencies": {
+    "@eslint/js": "^9.5.0",
+    "@jihyunlab/eslint-config": "^2.0.0",
+    "@types/eslint__js": "^8.42.3",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "prettier": "^3.3.2",
+    "typescript": "^5.5.2",
+    "typescript-eslint": "^7.14.1"
+  }
 }
