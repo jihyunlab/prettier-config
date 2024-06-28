@@ -46,31 +46,10 @@ Create and edit the <U>.prettierignore</U> file.
 /coverage
 ```
 
-### Configure VSCode for Prettier
-
-If you are not using VSCode, do not follow the current steps.
-
-Create and edit the <U>.vscode/settings.json</U> file.
-
-```
-├─ .vscode
-│  └─ settings.json
-└─ ...
-```
-
-```
-{
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true
-}
-```
-
 ### Configure ESLint for Prettier
 
-If you are not using ESLint, do not follow the current steps.\
+When using ESLint, Edit the <U>eslint.config.mjs</U> file.
 For ESLint installation and configuration, see [@jihyunlab/eslint-config](https://www.npmjs.com/package/@jihyunlab/eslint-config).
-
-Edit the <U>eslint.config.mjs</U> file.
 
 ```
 ├─ eslint.config.mjs
@@ -105,6 +84,23 @@ export default tsEslint.config(
     ],
   }
 );
+```
+
+### Configure VSCode for Prettier
+
+When using VSCode, create and edit the <U>.vscode/settings.json</U> file.
+
+```
+├─ .vscode
+│  └─ settings.json
+└─ ...
+```
+
+```
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
+}
 ```
 
 ## Credits
