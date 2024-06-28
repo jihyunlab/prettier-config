@@ -15,14 +15,12 @@ npm i --save-dev @jihyunlab/prettier-config prettier eslint-config-prettier esli
 
 ### Configure Prettier
 
-Create the <U>prettier.config.mjs</U> file.
+Create and edit the <U>prettier.config.mjs</U> file.
 
 ```
 ├─ prettier.config.mjs
 └─ ...
 ```
-
-Edit the <U>prettier.config.mjs</U> file as follows:
 
 ```
 import { jihyunlabPrettierConfig } from '@jihyunlab/prettier-config';
@@ -34,14 +32,12 @@ export default {
 
 ### Configure Prettier Ignore
 
-Create the <U>.prettierignore</U> file.
+Create and edit the <U>.prettierignore</U> file.
 
 ```
 ├─ .prettierignore
 └─ ...
 ```
-
-Edit the <U>.prettierignore</U> file as follows:
 
 ```
 /node_modules
@@ -54,15 +50,13 @@ Edit the <U>.prettierignore</U> file as follows:
 
 If you are not using VSCode, do not follow the current steps.
 
-Create the <U>.vscode/settings.json</U> file.
+Create and edit the <U>.vscode/settings.json</U> file.
 
 ```
 ├─ .vscode
 │  └─ settings.json
 └─ ...
 ```
-
-Edit the <U>.vscode/settings.json</U> file as follows:
 
 ```
 {
@@ -76,7 +70,7 @@ Edit the <U>.vscode/settings.json</U> file as follows:
 If you are not using ESLint, do not follow the current steps.\
 For ESLint installation and configuration, see [@jihyunlab/eslint-config](https://www.npmjs.com/package/@jihyunlab/eslint-config).
 
-Edit the <U>eslint.config.mjs</U> file as follows:
+Edit the <U>eslint.config.mjs</U> file.
 
 ```
 ├─ eslint.config.mjs
