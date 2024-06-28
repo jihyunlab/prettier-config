@@ -48,7 +48,7 @@ Create and edit the <U>.prettierignore</U> file.
 
 ### Configure ESLint for Prettier
 
-When using ESLint, Edit the <U>eslint.config.mjs</U> file.
+When using ESLint, Edit the <U>eslint.config.mjs</U> file.\
 For ESLint installation and configuration, see [@jihyunlab/eslint-config](https://www.npmjs.com/package/@jihyunlab/eslint-config).
 
 ```
