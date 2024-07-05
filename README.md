@@ -5,6 +5,8 @@
 
 JihyunLab Prettier config.
 
+@jihyunlab/prettier-config provides Prettier config for TypeScript.
+
 ## Installation
 
 ```bash
