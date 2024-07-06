@@ -1,7 +1,7 @@
 {
   "name": "@jihyunlab/prettier-config",
   "version": "2.0.7",
-  "description": "JihyunLab Prettier config.",
+  "description": "JihyunLab Prettier config for TypeScript.",
   "license": "MIT",
   "author": "JihyunLab <info@jihyunlab.com> (https://jihyunlab.com)",
   "homepage": "https://jihyunlab.com/library/npm/prettier-config",
