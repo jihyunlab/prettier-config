@@ -1,6 +1,6 @@
 {
   "name": "@jihyunlab/prettier-config",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "JihyunLab Prettier config.",
   "license": "MIT",
   "author": "JihyunLab <info@jihyunlab.com> (https://jihyunlab.com)",
@@ -21,7 +21,7 @@
   ],
   "devDependencies": {
     "@eslint/js": "^9.5.0",
-    "@jihyunlab/eslint-config": "^2.0.5",
+    "@jihyunlab/eslint-config": "^2.0.7",
     "@types/eslint__js": "^8.42.3",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",

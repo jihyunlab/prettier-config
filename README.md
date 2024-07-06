@@ -3,8 +3,6 @@
 [![Version](https://img.shields.io/npm/v/@jihyunlab/prettier-config.svg?style=flat-square)](https://www.npmjs.com/package/@jihyunlab/prettier-config?activeTab=versions) [![Downloads](https://img.shields.io/npm/dt/@jihyunlab/prettier-config.svg?style=flat-square)](https://www.npmjs.com/package/@jihyunlab/prettier-config) [![Last commit](https://img.shields.io/github/last-commit/jihyunlab/prettier-config.svg?style=flat-square)](https://github.com/jihyunlab/prettier-config/graphs/commit-activity) [![License](https://img.shields.io/github/license/jihyunlab/prettier-config.svg?style=flat-square)](https://github.com/jihyunlab/prettier-config/blob/master/LICENSE) [![Linter](https://img.shields.io/badge/linter-eslint-blue?style=flat-square)](https://eslint.org) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)\
 [![Build](https://github.com/jihyunlab/prettier-config/actions/workflows/build.yml/badge.svg)](https://github.com/jihyunlab/prettier-config/actions/workflows/build.yml) [![Lint](https://github.com/jihyunlab/prettier-config/actions/workflows/lint.yml/badge.svg)](https://github.com/jihyunlab/prettier-config/actions/workflows/lint.yml) [![Prettier](https://github.com/jihyunlab/prettier-config/actions/workflows/prettier.yml/badge.svg)](https://github.com/jihyunlab/prettier-config/actions/workflows/prettier.yml)
 
-JihyunLab Prettier config.
-
 @jihyunlab/prettier-config provides Prettier config for TypeScript.
 
 ## Installation
