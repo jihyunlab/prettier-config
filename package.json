@@ -1,6 +1,6 @@
 {
   "name": "@jihyunlab/prettier-config",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "JihyunLab Prettier config for TypeScript.",
   "license": "MIT",
   "author": "JihyunLab <info@jihyunlab.com> (https://jihyunlab.com)",
@@ -12,8 +12,8 @@
   "scripts": {
     "build": "tsc --build",
     "clean": "tsc --build --clean",
-    "lint": "eslint **/*.{ts,tsx,mts,cts}",
-    "prettier": "prettier --check **/*.{ts,tsx,mts,cts}"
+    "lint": "eslint \"**/*.{ts,tsx,mts,cts}\"",
+    "prettier": "prettier --check \"**/*.{ts,tsx,mts,cts}\""
   },
   "keywords": [
     "prettier",
